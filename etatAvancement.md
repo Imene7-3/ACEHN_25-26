@@ -1,33 +1,19 @@
-```mermaid
-gantt
-    dateFormat  YYYY-MM-DD
-    title       Adding GANTT diagram functionality to mermaid
-    excludes    weekends
-    %% (`excludes` accepts specific dates in YYYY-MM-DD format, days of the week ("sunday") or "weekends", but not the word "weekdays".)
+# État d’avancement de l’enquête DMA4EDD2
 
-    section A section
-    Completed task            :done,    des1, 2014-01-06,2014-01-08
-    Active task               :active,  des2, 2014-01-09, 3d
-    Future task               :         des3, after des2, 5d
-    Future task2              :         des4, after des3, 5d
+## Diagramme Gantt simplifié
 
-    section Critical tasks
-    Completed task in the critical line :crit, done, 2014-01-06,24h
-    Implement parser and jison          :crit, done, after des1, 2d
-    Create tests for parser             :crit, active, 3d
-    Future task in critical line        :crit, 5d
-    Create tests for renderer           :2d
-    Add to mermaid                      :until isadded
-    Functionality added                 :milestone, isadded, 2014-01-25, 0d
-
-    section Documentation
-    Describe gantt syntax               :active, a1, after des1, 3d
-    Add gantt diagram to demo page      :after a1  , 20h
-    Add another diagram to demo page    :doc1, after a1  , 48h
-
-    section Last section
-    Describe gantt syntax               :after doc1, 3d
-    Add gantt diagram to demo page      :20h
-    Add another diagram to demo page    :48h
-
-```
+Tâches                                         | Début       | Durée  | Statut
+-----------------------------------------------|------------|-------|--------
+Élaboration du questionnaire                  | 05/01/2025 | 15j   | ✅ Terminé
+Diffusion questionnaire (résidence/Facebook/WhatsApp) | 21/01/2025 | 21j   | 🟡 En cours
+Distribution photocopies à connaissances     | 22/01/2025 | 5j    | 🟡 En cours
+Saisie sur LimeSurvey                          | 28/01/2025 | 10j   | ⬜ À faire
+Premiers entretiens étudiants                  | 22/01/2025 | 20j   | 🟡 En cours
+Entretiens programmés jeunes actifs           | 12/02/2025 | 25j   | ⬜ À faire
+Entretiens supplémentaires résidence          | 09/03/2025 | 15j   | ⬜ À faire
+Enregistrements audio/vidéo                    | 24/03/2025 | 15j   | ⬜ À faire
+Analyse préliminaire questionnaire            | 28/01/2025 | 15j   | ⬜ À faire
+Analyse des entretiens et verbatims           | 08/04/2025 | 15j   | ⬜ À faire
+Croisement des données                         | 23/04/2025 | 7j    | ⬜ À faire
+Rédaction de la synthèse finale               | 30/04/2025 | 10j   | ⬜ À faire
+Fin de l’enquête                               | 10/05/2025 | 0j    | 🎯 Jalons
