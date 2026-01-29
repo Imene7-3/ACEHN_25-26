@@ -1,33 +1,28 @@
-```mermaid
-gantt
-    dateFormat  YYYY-MM-DD
-    title       Adding GANTT diagram functionality to mermaid
-    excludes    weekends
-    %% (`excludes` accepts specific dates in YYYY-MM-DD format, days of the week ("sunday") or "weekends", but not the word "weekdays".)
+# État d’avancement de l’enquête  
+**Usages du numérique dans la recherche de logement des étudiants et jeunes actifs en Seine-Saint-Denis**
 
-    section A section
-    Completed task            :done,    des1, 2014-01-06,2014-01-08
-    Active task               :active,  des2, 2014-01-09, 3d
-    Future task               :         des3, after des2, 5d
-    Future task2              :         des4, after des3, 5d
+Ce document présente l’état d’avancement de l’enquête menée dans le cadre du projet DMA4EDD2.  
+L’enquête porte sur les usages du numérique dans la recherche de logement des étudiants et des jeunes actifs en Seine-Saint-Denis, en combinant un questionnaire et des entretiens qualitatifs.
 
-    section Critical tasks
-    Completed task in the critical line :crit, done, 2014-01-06,24h
-    Implement parser and jison          :crit, done, after des1, 2d
-    Create tests for parser             :crit, active, 3d
-    Future task in critical line        :crit, 5d
-    Create tests for renderer           :2d
-    Add to mermaid                      :until isadded
-    Functionality added                 :milestone, isadded, 2014-01-25, 0d
+---
 
-    section Documentation
-    Describe gantt syntax               :active, a1, after des1, 3d
-    Add gantt diagram to demo page      :after a1  , 20h
-    Add another diagram to demo page    :doc1, after a1  , 48h
+## Diagramme de Gantt de l’enquête
 
-    section Last section
-    Describe gantt syntax               :after doc1, 3d
-    Add gantt diagram to demo page      :20h
-    Add another diagram to demo page    :48h
+![Diagramme Gantt – état d’avancement](etatAvancement.png)
 
-```
+> Le diagramme ci-dessus a été généré avec Mermaid Live Editor et exporté en image pour une visualisation directe sur GitHub.
+
+---
+
+## Éléments qualitatifs et état d’avancement
+
+À ce stade, cinq entretiens ont été réalisés auprès d’étudiants résidant à Saint-Denis.  
+
+Le questionnaire a été diffusé **au sein de la résidence**, ainsi que dans plusieurs groupes Facebook et WhatsApp dédiés aux étudiants et aux jeunes actifs.  
+Pour l’instant, certaines copies ont été **photocopiées et distribuées à mes connaissances**, mais les réponses ne sont pas encore récupérées. La saisie des questionnaires sera réalisée prochainement sur **LimeSurvey**.
+
+Trois entretiens supplémentaires avec des jeunes actifs sont déjà programmés, et sept autres entretiens sont prévus au sein de la résidence.  
+Certaines personnes ont accepté l’enregistrement audio des entretiens afin de permettre une analyse plus fine des discours.
+
+Enfin, l’enquête intègre également un **témoignage personnel de l’enquêtrice**, résidant à Saint-Denis et ayant été en recherche active de logement pendant plusieurs mois.  
+Ce témoignage pourra être accompagné d’un **enregistrement audio ou vidéo** et viendra compléter les données recueillies en apportant un point de vue situé et réflexif.
