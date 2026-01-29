@@ -1,33 +1,41 @@
 ```mermaid
 gantt
+    title Etat d'avancement de l'enquete sur le logement des étudiants et jeunes actifs
     dateFormat  YYYY-MM-DD
-    title       Adding GANTT diagram functionality to mermaid
     excludes    weekends
-    %% (`excludes` accepts specific dates in YYYY-MM-DD format, days of the week ("sunday") or "weekends", but not the word "weekdays".)
 
-    section A section
-    Completed task            :done,    des1, 2014-01-06,2014-01-08
-    Active task               :active,  des2, 2014-01-09, 3d
-    Future task               :         des3, after des2, 5d
-    Future task2              :         des4, after des3, 5d
+    %% Travaux préliminaires et préparation
+    section Travaux preliminaires
+    Lecture du rapport et recherche documentaire        :done, t1, 2025-11-10, 3d
+    Structuration journal de bord et prise de notes    :done, t2, after t1, 2d
+    Finalisation 5W+1 et problématique V2             :done, t3, after t2, 2d
+    Identification du terrain et contacts locaux       :done, t4, after t3, 3d
 
-    section Critical tasks
-    Completed task in the critical line :crit, done, 2014-01-06,24h
-    Implement parser and jison          :crit, done, after des1, 2d
-    Create tests for parser             :crit, active, 3d
-    Future task in critical line        :crit, 5d
-    Create tests for renderer           :2d
-    Add to mermaid                      :until isadded
-    Functionality added                 :milestone, isadded, 2014-01-25, 0d
+    %% Questionnaire
+    section Questionnaire
+    Élaboration questionnaire                          :done, q1, 2025-11-15, 5d
+    Diffusion questionnaire (résidence/Facebook/WhatsApp) :active, q2, after q1, 7d
+    Distribution photocopies aux connaissances        :done, q3, after q2, 3d
+    Saisie des questions et réponses sur LimeSurvey   :todo, q4, after q2, 10d
 
-    section Documentation
-    Describe gantt syntax               :active, a1, after des1, 3d
-    Add gantt diagram to demo page      :after a1  , 20h
-    Add another diagram to demo page    :doc1, after a1  , 48h
+    %% Entretiens
+    section Entretiens
+    Premiers entretiens étudiants                     :done, e1, after q2, 5d
+    Entretiens programmés jeunes actifs               :todo, e2, after e1, 7d
+    Entretiens supplémentaires résidence              :todo, e3, after e2, 5d
+    Enregistrements audio/vidéo                        :todo, e4, after e3, 5d
+    Témoignage personnel (audio/vidéo)                :todo, e5, after e4, 3d
 
-    section Last section
-    Describe gantt syntax               :after doc1, 3d
-    Add gantt diagram to demo page      :20h
-    Add another diagram to demo page    :48h
+    %% Analyse et synthèse
+    section Analyse
+    Analyse préliminaire questionnaire               :todo, a1, after q4, 5d
+    Analyse des entretiens et verbatims              :todo, a2, after e5, 7d
+    Croisement des données                            :todo, a3, after a2, 3d
+    Rédaction synthèse finale                         :todo, a4, after a3, 5d
+
+    %% Clôture
+    section Cloture
+    Fin de l'enquête                                  :milestone, end, after a4, 0d
+
 
 ```
